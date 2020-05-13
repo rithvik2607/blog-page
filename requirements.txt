@@ -25,6 +25,8 @@ Mako==1.1.2
 MarkupSafe==1.1.1
 mccabe==0.6.1
 Pillow==7.1.2
+psycopg2==2.8.5
+psycopg2-binary==2.8.5
 pycparser==2.20
 pylint==2.5.0
 pynput==1.6.8
