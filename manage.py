@@ -5,6 +5,7 @@ from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from flaskblog.models import User, Post
 from flaskblog import db
+from flaskblog.config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
