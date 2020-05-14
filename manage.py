@@ -7,9 +7,8 @@ from flaskblog.models import User, Post
 from flaskblog import db
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config.from_object(Config)
 
-db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 manager = Manager(app)
